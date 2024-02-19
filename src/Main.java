@@ -4,18 +4,17 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        Graph graph = new Graph();
-        graph.addConnection(new Connection(new Node(0), new Node(1)));
-        graph.addConnection(new Connection(new Node(0), new Node(2)));
-        graph.addConnection(new Connection(new Node(1), new Node(3)));
-        graph.addConnection(new Connection(new Node(2), new Node(3)));
-        graph.addConnection(new Connection(new Node(3), new Node(5)));
-        graph.addConnection(new Connection(new Node(3), new Node(4)));
-        graph.addConnection(new Connection(new Node(4), new Node(6)));
-        graph.addConnection(new Connection(new Node(4), new Node(5)));
-        graph.addConnection(new Connection(new Node(5), new Node(6)));
+        RouteFinder routeFinder = new RouteFinder();
 
-        RouteFinder routeFinder = new RouteFinder(graph);
+        routeFinder.getGraph().addConnection(new Connection(new Node(0), new Node(1)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(0), new Node(2)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(1), new Node(3)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(2), new Node(3)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(3), new Node(5)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(3), new Node(4)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(4), new Node(6)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(4), new Node(5)));
+        routeFinder.getGraph().addConnection(new Connection(new Node(5), new Node(6)));
     }
 //        Nodes node0 = new Nodes(0, new Connection[]{new Connection(1),
 //                new Connection(2)});
