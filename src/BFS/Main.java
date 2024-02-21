@@ -16,18 +16,17 @@ public class Main {
         g.addUndirectedEdge(0,1);
         g.addUndirectedEdge(0,2);
         g.addUndirectedEdge(0,3);
-
         g.addUndirectedEdge(1,0);
         g.addUndirectedEdge(1,4);
-
         g.addUndirectedEdge(4,1);
         g.addUndirectedEdge(4,3);
-
         g.addUndirectedEdge(3,2);
         g.addUndirectedEdge(3,0);
         g.addUndirectedEdge(3,4);
-
         g.addUndirectedEdge(2,0);
         g.addUndirectedEdge(2,3);
+
+        System.out.println(g);
+        g.bfs();
     }
 }
