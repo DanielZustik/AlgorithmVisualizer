@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DijkstrasVisualizer.iml" filepath="$PROJECT_DIR$/DijkstrasVisualizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PathFindingAlgorithmsVisualizer.iml" filepath="$PROJECT_DIR$/PathFindingAlgorithmsVisualizer.iml" />
     </modules>
   </component>
 </project>
